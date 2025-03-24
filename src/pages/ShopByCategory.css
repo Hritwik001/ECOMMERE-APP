@@ -1,0 +1,79 @@
+/* Section Styling */
+.shop-category-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.shop-category-container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title */
+.shop-category-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.shop-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Category Card */
+.shop-category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.shop-category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Category Image */
+.shop-category-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Category Name */
+.shop-category-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+
+/* Shop Now Button */
+.shop-now-btn {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.shop-now-btn:hover {
+  background-color: #0056b3;
+}

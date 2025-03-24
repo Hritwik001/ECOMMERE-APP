@@ -1,0 +1,149 @@
+/* Ensure Full-Width */
+.footer {
+  background: #121212;
+  color: #ffffff;
+  padding: 50px 0; /* ✅ Top and bottom padding */
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  margin: 0;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px; /* ✅ Added padding to create space */
+  flex-wrap: wrap;
+}
+
+/* Footer Logo Section */
+.footer-logo {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffcc00;
+  margin-bottom: 10px; /* ✅ Added spacing */
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #bbb;
+  max-width: 250px;
+}
+
+/* Quick Links */
+.footer-links {
+  flex: 1;
+  text-align: center;
+  min-width: 200px;
+}
+
+.footer-links h3 {
+  font-size: 18px;
+  margin-bottom: 15px; /* ✅ Added space below heading */
+  color: #ffcc00;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 6px 0;
+}
+
+.footer-links ul li a {
+  color: #ffcc00;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+  color: #ffa500;
+}
+
+/* Social Media Section */
+.footer-social {
+  flex: 1;
+  text-align: right;
+  min-width: 250px;
+}
+
+.footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 15px; /* ✅ Added spacing */
+  color: #ffcc00;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #ffcc00;
+  transition: transform 0.3s ease, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffa500;
+  transform: scale(1.1);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #bbb;
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  width: 100%;
+}
+
+/* ✅ Remove unwanted margin/padding */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-logo {
+    text-align: center;
+    margin-left: 0;
+  }
+  .footer-links {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer-social {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
