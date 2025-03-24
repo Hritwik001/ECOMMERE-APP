@@ -12,7 +12,10 @@ const ProductListing = () => {
             try {
                 const response = await fetch(`https://fakestoreapi.com/products/category/${categoryName}`);
                 const data = await response.json();
-                setProducts(data);
+                setProducts(data.map(product => ({
+                    ...product,
+                    price: (product.price * 83).toFixed(2)  // Convert price to INR
+                })));
             } catch (error) {
                 console.error("Error fetching products:", error);
             } finally {
@@ -60,4 +63,5 @@ const ProductListing = () => {
 };
 
 export default ProductListing;
+
 

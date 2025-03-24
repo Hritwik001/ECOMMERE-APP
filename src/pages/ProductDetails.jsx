@@ -30,7 +30,7 @@ const ProductDetails = () => {
             if (featuredProduct) {
                 setProduct({
                     ...featuredProduct,
-                    price: (featuredProduct.priceUSD * 83).toFixed(2)
+                    price: (featuredProduct.priceUSD * 83).toFixed(2)  // Convert USD to INR
                 });
                 setLoading(false);
                 return;
@@ -39,7 +39,10 @@ const ProductDetails = () => {
             try {
                 const response = await fetch(`https://fakestoreapi.com/products/${id}`);
                 const data = await response.json();
-                setProduct({ ...data, price: (data.price * 83).toFixed(2) });
+                setProduct({
+                    ...data,
+                    price: (data.price * 83).toFixed(2)  // Convert price to INR
+                });
             } catch (error) {
                 console.error("Error fetching product:", error);
             } finally {
