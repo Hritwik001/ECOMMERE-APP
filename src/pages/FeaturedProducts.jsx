@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./FeaturedProducts.css";
 
 const products = [
-    { id: 101, name: "Wireless Headphones", priceUSD: 30, image: "../../public/assets/Featured_Products/headphones.jpg" },
-    { id: 102, name: "Smartwatch", priceUSD: 50, image: "../../public/assets/Featured_Products/smartwatch.jpg" },
-    { id: 103, name: "Bluetooth Speaker", priceUSD: 25, image: "../../public/assets/Featured_Products/speaker.jpg" },
+    { id: 101, name: "Wireless Headphones", priceUSD: 30, image: "/assets/Featured_Products/headphones.jpg" },
+    { id: 102, name: "Smartwatch", priceUSD: 50, image: "/assets/Featured_Products/smartwatch.jpg" },
+    { id: 103, name: "Bluetooth Speaker", priceUSD: 25, image: "/assets/Featured_Products/speaker.jpg" },
 ];
 
 const FeaturedProducts = () => {

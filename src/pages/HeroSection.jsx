@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./Home.css"; // Ensure correct path
 
 const images = [
-    "../../public/assets/Hero_Section/product1.jpg",
-    "../../public/assets/Hero_Section/product2.jpg",
-    "../../public/assets/Hero_Section/product3.jpg"
+    "/assets/Hero_Section/product1.jpg",
+    "/assets/Hero_Section/product2.jpg",
+    "/assets/Hero_Section/product3.jpg"
 ];
 
 const HeroSection = () => {

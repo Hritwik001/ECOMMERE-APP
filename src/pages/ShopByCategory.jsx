@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import "./ShopByCategory.css"; // Import the CSS file
 
 // Import images correctly
-import electronicsImg from "../../public/assets/Home_Categories/Electronics_Categories_Home.jpg";
-import jewelleryImg from "../../public/assets/Home_Categories/Jewellery_Categories_Home.jpg";
-import mensClothingImg from "../../public/assets/Home_Categories/men's_clothing_Categories_Home.jpg";
-import womensClothingImg from "../../public/assets/Home_Categories/women's_clothing_Categories_Home.jpg";
+import electronicsImg from "/assets/Home_Categories/Electronics_Categories_Home.jpg";
+import jewelleryImg from "/assets/Home_Categories/Jewellery_Categories_Home.jpg";
+import mensClothingImg from "/assets/Home_Categories/men's_clothing_Categories_Home.jpg";
+import womensClothingImg from "/assets/Home_Categories/women's_clothing_Categories_Home.jpg";
 
 // Map category names to their corresponding images
 const categoryImages = {
