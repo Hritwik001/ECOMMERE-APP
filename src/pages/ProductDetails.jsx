@@ -7,9 +7,9 @@ import "react-toastify/dist/ReactToastify.css";
 import "./ProductDetails.css";
 
 const featuredProducts = [
-    { id: "101", title: "Wireless Headphones", priceUSD: 30, description: "High-quality wireless headphones.", image: "/src/assets/Featured_Products/headphones.jpg" },
-    { id: "102", title: "Smartwatch", priceUSD: 50, description: "Feature-packed smartwatch.", image: "/src/assets/Featured_Products/smartwatch.jpg" },
-    { id: "103", title: "Bluetooth Speaker", priceUSD: 25, description: "Portable Bluetooth speaker.", image: "/src/assets/Featured_Products/speaker.jpg" },
+    { id: "101", title: "Wireless Headphones", priceUSD: 30, description: "High-quality wireless headphones.", image: "../../public/assets/Featured_Products/headphones.jpg" },
+    { id: "102", title: "Smartwatch", priceUSD: 50, description: "Feature-packed smartwatch.", image: "../../public/assets/Featured_Products/smartwatch.jpg" },
+    { id: "103", title: "Bluetooth Speaker", priceUSD: 25, description: "Portable Bluetooth speaker.", image: "../../public/assets/Featured_Products/speaker.jpg" },
 ];
 
 const ProductDetails = () => {
